@@ -1,0 +1,75 @@
+# Game Selector Python Script
+
+## Overview
+
+This is a simple Python script that allows a user to select a game from a predefined list and launches the corresponding game environment. Currently, the script supports:
+
+* Candy Crush
+* Bubble Shooter
+
+It demonstrates basic Python concepts like user input, string manipulation, and conditional statements.
+
+## Features
+
+* Interactive command-line interface
+* Case-insensitive input handling
+* Easy to extend with additional games
+
+## Installation
+
+1. Make sure you have Python 3 installed on your system.
+   You can check your Python version using:
+
+   ```bash
+   python3 --version
+   ```
+2. Clone this repository or download the script file.
+3. Navigate to the directory containing the script.
+
+## Usage
+
+1. Run the script using Python:
+
+   ```bash
+   python3 game_selector.py
+   ```
+2. When prompted, type the name of the game you want to play:
+
+   ```
+   what kind of game do you want? 
+   ```
+3. Supported inputs (case-insensitive):
+
+   * `Candy Crush`
+   * `Bubble Shooter`
+   *`Tetris`
+   * `Backgammon`
+
+
+Example:
+
+```
+what kind of game do you want? Candy Crush
+you chose Candy Crush! stepping into game environment
+```
+
+## Extending the Script
+
+To add more games:
+
+1. Open `game_selector.py`.
+2. Add an `elif` block for the new game:
+
+   ```python
+   elif user_prompt.lower() == "new game":
+       print("you chose New Game! stepping into game environment")
+   ```
+3. Save and run the script again.
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request with new features or improvements.
+
+## License
+
+This project is open-source and free to use under the MIT License.
